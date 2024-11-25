@@ -1,0 +1,40 @@
+/* Styling for the question */
+.qst {
+    cursor: pointer; /* Make the question clickable */
+    font-weight: bold; /* Make the question text bold */
+    margin-bottom: 20px; /* Increased space between questions */
+    padding: 20px; /* Increased padding for a larger button */
+    background-color: #222; /* Darker background color */
+    color: white; /* White text color */
+    border-radius: 8px; /* Rounded corners */
+    border: 2px solid #444; /* Slightly thicker border */
+    font-size: 20px; /* Larger font size */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect for questions */
+.qst:hover {
+    background-color: #333; /* Slightly lighter on hover */
+}
+
+/* Styling for the answer */
+.ans {
+    height: 0; /* Initially hide the answer */
+    opacity: 0; /* Initially transparent */
+    background-color: white; /* White background for the answer */
+    padding: 0 20px; /* Padding inside the answer */
+    margin-top: 10px; /* Space between question and answer */
+    border: 1px solid #ddd; /* Border around the answer */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 18px; /* Font size for the answer */
+    color: black; /* Black text color */
+    overflow: hidden; /* Prevent overflowing content */
+    transition: height 0.8s ease-in-out, opacity 0.8s ease-in-out; /* Transition for height and opacity */
+}
+
+/* When the answer is revealed */
+.ans.show {
+    height: auto; /* Allow the answer to expand fully */
+    opacity: 1; /* Fully visible */
+    padding: 20px; /* Padding when the answer is visible */
+}
